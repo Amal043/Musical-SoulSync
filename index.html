@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎵 Musical SoulSync</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1><span class="note">🎵</span> Musical SoulSync</h1>
+
+
+        <!-- Search section -->
+        <select id="searchType" aria-label="Search Type">
+            <option value="">-- Search By --</option>
+            <option value="writer">Song Name</option>
+            <option value="singer">Singer</option>
+            <option value="song">Writer</option>
+        </select>
+
+        <input type="text" id="searchInput" placeholder="Enter your search..." aria-label="Search Input" />
+        <button onclick="searchSongs()">Search</button>
+
+        <!-- Results section -->
+        <div id="results"></div>
+
+        <!-- Playlist section -->
+        <div id="playlistManager">
+            <h2>📂 Playlists</h2>
+            <select id="playlistSelector" aria-label="Playlist Selector"></select>
+            <button onclick="createPlaylist()">➕ New Playlist</button>
+            <button onclick="deletePlaylist()">🗑️ Delete Playlist</button>
+            <ul id="playlistSongs"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
