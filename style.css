@@ -342,21 +342,34 @@ h1 {
 
 .footer {
     text-align: center;
-    padding: 16px 10px;
-    background-color: #111;
-    color: #eee;
-    font-size: 15px;
+    padding: 20px 10px;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-size: 16px;
     margin-top: 40px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 -2px 10px rgba(0, 255, 150, 0.1);
-    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 -5px 15px rgba(255, 255, 255, 0.03);
+    animation: footerGlow 10s infinite ease-in-out;
 }
 
 .footer span {
-    color: #1db954;
     font-weight: bold;
+    color: #e31b5e;
     text-shadow: 0 0 5px #1db954, 0 0 10px #1db954;
 }
+
+@keyframes footerGlow {
+
+    0%,
+    100% {
+        text-shadow: 0 0 5px #1db954;
+    }
+
+    50% {
+        text-shadow: 0 0 15px #1db954;
+    }
+}
+
 
 
 
