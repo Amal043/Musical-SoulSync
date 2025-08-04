@@ -1,4 +1,5 @@
-const apiKey = 'AIzaSyD1fteD82CRvxzORnzWaTxFZw8hQI992PI'; // Replace with your API key
+ 
+const apiKey = 'AIzaSyBIEkJ7RM-UnRQec0zV95itTEaxr8kg5B8';// Replace with your API key
 
 function searchSongs() {
   const type = document.getElementById('searchType').value;
@@ -160,6 +161,7 @@ document.addEventListener('mousemove', (e) => {
         note.remove();
     }, 2000);
 });
+
 
 
 
